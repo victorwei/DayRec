@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="UserRecoTableViewCell" customModule="DayRec" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RnV-aa-vZd">
+                        <rect key="frame" x="8" y="8" width="63.5" height="63.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="RnV-aa-vZd" secondAttribute="height" multiplier="1:1" id="1lC-Qd-3QR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="city name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="br2-bx-sTQ">
+                        <rect key="frame" x="79.5" y="10" width="71.5" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description of reco" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAg-RM-kxG">
+                        <rect key="frame" x="79.5" y="27" width="232.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5F-9H-vzb">
+                        <rect key="frame" x="0.0" y="78.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="fSg-Q4-tub"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="RnV-aa-vZd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="1wS-9L-48g"/>
+                    <constraint firstItem="br2-bx-sTQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="2Mm-fA-o7O"/>
+                    <constraint firstItem="g5F-9H-vzb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Bzr-3i-raZ"/>
+                    <constraint firstItem="br2-bx-sTQ" firstAttribute="leading" secondItem="RnV-aa-vZd" secondAttribute="trailing" constant="8" id="FnN-yp-zyU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="g5F-9H-vzb" secondAttribute="trailing" constant="-8" id="RbS-3f-QMM"/>
+                    <constraint firstItem="LAg-RM-kxG" firstAttribute="top" secondItem="br2-bx-sTQ" secondAttribute="bottom" constant="-1" id="duT-rp-hvx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="LAg-RM-kxG" secondAttribute="trailing" id="jQz-G6-jSn"/>
+                    <constraint firstItem="LAg-RM-kxG" firstAttribute="leading" secondItem="br2-bx-sTQ" secondAttribute="leading" id="k4z-Mw-ASM"/>
+                    <constraint firstItem="g5F-9H-vzb" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="o6t-hN-rA6"/>
+                    <constraint firstItem="RnV-aa-vZd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="pw6-1l-Hxp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="RnV-aa-vZd" secondAttribute="bottom" id="tSt-DS-P6b"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="g5F-9H-vzb" secondAttribute="bottom" constant="-8" id="v4B-zb-bWQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cityImageView" destination="RnV-aa-vZd" id="tKS-pl-aEl"/>
+                <outlet property="cityLabel" destination="br2-bx-sTQ" id="USZ-8V-SSe"/>
+                <outlet property="recoLabel" destination="LAg-RM-kxG" id="dxD-FI-90m"/>
+            </connections>
+            <point key="canvasLocation" x="359" y="286"/>
+        </tableViewCell>
+    </objects>
+</document>
